@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { assets } from '../assets/assets';
 import classes from './Header.module.css';
+import { AppContext } from '../context/appContext';
 
 const Header = () => {
+  const {userData} = useContext(AppContext)
   return (
     <div className={classes.container}>
       <img 
@@ -12,7 +14,7 @@ const Header = () => {
       />
 
       <h1 className={classes.title}>
-        Hey Developer 
+        Hey {userData ? userData.name : 'Developer'}
         <img src={assets.hand_wave} alt="Wave" className={classes.wave} />
       </h1>
 
