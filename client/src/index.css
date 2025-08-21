@@ -1,0 +1,12 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Playwrite+RO&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Tailwind Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global font */
+* {
+  font-family: "Outfit", sans-serif;
+}

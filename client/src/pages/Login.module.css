@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 1.5rem;
+    background: linear-gradient(to bottom right, #bfdbfe, #c084fc);
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 1.25rem;
+    top: 1.25rem;
+    width: 7rem;
+    cursor: pointer;
+}
+
+@media (min-width: 640px) {
+    .container {
+        padding: 0;
+    }
+
+    .logo {
+        left: 5rem;
+        width: 8rem;
+    }
+}
+
+.content {
+    background-color: slategray;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 24rem;
+    color: #c7d2fe;
+    text-align: center;
+}
+
+.formGroup {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.60rem;
+    width: 80%;
+    padding: 1.2rem 1.25rem;
+    border-radius: 9999px;
+    background-color: #333a5c;
+
+    /* margin: 0 auto; */
+}
+
+.input {
+    background: transparent;
+    outline: none;
+    border: none;
+    flex: 1;
+    color: #c7d2fe;
+    font-size: 1rem;
+}
+.forgotten{
+    text-align: start;
+
+}
+.submitButton {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 9999px;
+    border: none;
+    background: linear-gradient(to right, #6366f1, #312e81);
+    /* indigo-500 → indigo-900 */
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submitButton:hover {
+    background: linear-gradient(to right, #4f46e5, #1e1b4b);
+    /* darker gradient on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.login,
+.signup {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #c7d2fe;
+    margin-top: 1rem;
+}
+
+.login span,
+.signup span {
+    color: #333;
+    cursor: pointer;
+    font-weight: 500;
+    margin-left: 0.25rem;
+}
+
+.login span:hover,
+.signup span:hover {
+    text-decoration: underline;
+}

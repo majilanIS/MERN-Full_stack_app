@@ -1,0 +1,62 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    gap: 50%;
+    /* p-4 */
+    position: absolute;
+    top: 0;
+    z-index: 50;
+}
+.loginButton{
+    padding: 10px  15px !important;
+    
+}
+
+@media (min-width: 640px) {
+    .container {
+        padding: 1.5rem 6rem;
+        /* sm:p-6 sm:px-24 */
+    }
+}
+
+.logo {
+    width: 7rem;
+    /* w-28 */
+}
+
+@media (min-width: 640px) {
+    .logo {
+        width: 8rem;
+        /* sm:w-32 */
+    }
+}
+
+.loginButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* gap-2 */
+    border: 1px solid #6b7280;
+    /* border-gray-500 */
+    border-radius: 9999px;
+    /* rounded-full */
+    padding: 1rem 1.5rem;
+    /* py-4 px-6 */
+    margin-right: 3rem;
+    /* mr-12 */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.loginButton:hover {
+    background-color: #f3f4f6;
+    /* hover:bg-gray-100 */
+}
+
+.loginButton img {
+    width: 1rem;
+    /* optional: adjust arrow size if needed */
+}

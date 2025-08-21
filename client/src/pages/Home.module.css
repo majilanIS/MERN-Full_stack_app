@@ -1,0 +1,9 @@
+.homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('../assets/bg_img.png');
+    background-size: cover;
+    background-position: center;
+}
